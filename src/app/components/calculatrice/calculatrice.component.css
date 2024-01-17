@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300);
+
+body, html {
+  font-family: Open Sans, Arial;
+  text-align: center;
+  background-color: #9B8F89;
+}
+
+h3 {
+  color: #969194;
+  font-family: 'pacifico';
+}
+
+
+
+.calculator {
+  width: 250px;
+  height: 275px;
+  margin : 0px auto;
+  background-color: #F3EEE7;
+  /* border : 1px solid ; */
+  border-top-left-radius: 80%20px;
+  border-top-right-radius: 80%20px;
+  border-bottom-left-radius: 80%20px;
+  border-bottom-right-radius: 80%20px;
+
+  box-shadow: 1px 4px #969194, 0px 10px 15px rgba(0, 0, 0, 0.2);
+}

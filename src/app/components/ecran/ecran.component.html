@@ -1,0 +1,4 @@
+<div class="row">
+  <button class="btn-danger col-s-2" (click)="resetValue()">C</button>
+  <input type="text" id="ecran" class="screen col-s-10" [value]="(ValueButton$ |async)?.nombre" disabled/>
+</div>

@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300);
+
+body, html {
+  font-family: Open Sans, Arial;
+  text-align: center;
+  background-color: #9B8F89;
+}
+
+h3 {
+  color: #969194;
+  font-family: 'pacifico';
+}
+
+.row {
+
+}
+
+button {
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  color: #c14545;
+  font-size: 1.1em;
+  cursor: pointer;
+  border: 1px solid #4B4657;
+  border-top: 2px solid #7c748f;
+
+  border-radius: 15%;
+  border-top-left-radius: 80% 10px;
+  border-top-right-radius: 80% 10px;
+  border-bottom-left-radius: 100% 10px;
+  border-bottom-right-radius: 100% 10px;
+
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 8px;
+}
+
+.screen {
+  background-color: #bccd95;
+  width : 160px;
+}
+
+
