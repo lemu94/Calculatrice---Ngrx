@@ -1,10 +1,10 @@
-import {  createActionGroup, props } from "@ngrx/store";
+import {  createActionGroup, props , emptyProps } from "@ngrx/store";
 
 
 export const ButtonsActions = createActionGroup({
-  source: 'Books',
+  source: 'Buttons component',
   events: {
     'Ajout': props<{ nombre: number }>(),
-    'reset': props,
+    'reset': emptyProps,
   },
 });

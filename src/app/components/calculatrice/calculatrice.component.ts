@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './calculatrice.component.css'
 })
 export class CalculatriceComponent {
+  constructor()
+  {
+
+  }
 
 }

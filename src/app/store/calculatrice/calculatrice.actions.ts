@@ -1,4 +1,4 @@
-import { createActionGroup, props } from "@ngrx/store";
+import { createActionGroup, props , emptyProps } from "@ngrx/store";
 
 export const OperationGroup = createActionGroup({
   source : 'Calculatrice',
@@ -6,7 +6,7 @@ export const OperationGroup = createActionGroup({
     'Addition' : props<{nombre : number}>(),
     'Soustraction': props<{nombre : number}>(),
     'Multiplication' : props<{nombre : number}>(),
-    'egale': props,
+    'egale': emptyProps,
     'division': props<{nombre : number}>(),
   }
 })

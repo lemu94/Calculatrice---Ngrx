@@ -4,7 +4,7 @@ import { Calculatrice } from '../../store/calculatrice/calculatrice.model';
 import { Observable, map } from 'rxjs';
 import { OperationGroup } from '../../store/calculatrice/calculatrice.actions';
 import { ButtonsActions } from '../../store/buttons/buttons.actions';
-import { ButtonsC } from '../../store/buttons/buttons.model';
+import { ButtonOperators, ButtonValue, ButtonsC } from '../../store/buttons/buttons.model';
 
 @Component({
   selector: 'app-buttons',
@@ -15,7 +15,9 @@ export class ButtonsComponent implements OnInit {
 
 
   calculatrice$ : Observable<Calculatrice>;
-  buttons$ : Observable<ButtonsC >;
+  buttons$ : Observable<ButtonsC>;
+  buttonvalues : number[]= ButtonValue;
+  buttonOperators : string[]= ButtonOperators;
   constructor(private store : Store<{Calculatrice : Calculatrice}>,private store2 : Store<{Buttonsc : ButtonsC}>)
   {
     this.calculatrice$ = this.store.select('Calculatrice');
