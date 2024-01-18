@@ -6,5 +6,6 @@ export const ButtonsActions = createActionGroup({
   events: {
     'Ajout': props<{ nombre: number }>(),
     'reset': emptyProps,
+    'Operation': props<{ operator: string }>(),
   },
 });

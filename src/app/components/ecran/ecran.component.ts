@@ -12,18 +12,14 @@ import { ButtonsActions } from '../../store/buttons/buttons.actions';
 export class EcranComponent {
 
   ValueButton$ : Observable<ButtonsC>;
-  constructor(private store : Store<{Buttonsc : ButtonsC}>)
+  constructor(private storeButtons : Store<{Buttonsc : ButtonsC}>)
   {
-
-    this.ValueButton$ = store.select('Buttonsc');
-
+    this.ValueButton$ = storeButtons.select('Buttonsc');
   }
 
   resetValue()
   {
-
-    this.store.dispatch(ButtonsActions.reset())
-
+    this.storeButtons.dispatch(ButtonsActions.reset());
   }
 
 }

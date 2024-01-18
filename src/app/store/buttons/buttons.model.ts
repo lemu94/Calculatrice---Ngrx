@@ -1,6 +1,8 @@
 export interface ButtonsC {
 
-  nombre : number | string
+  nombre : number | string,
+  operator : string,
+  valuesave : number | string
 
 }
 
