@@ -1,7 +1,11 @@
 
 <div class="row">
-  <button *ngFor="let item of buttonvalues"  type="button" class="btn-primary col-s-3" (click)="ajout_nombre(item)">{{item}}</button>
+@for (item of buttonvalues; track $index) {
+  <button  type="button" class="btn-primary col-s-3" (click)="ajout_nombre(item)">{{item}}</button>
+}
 </div>
 <div class="row">
-  <button class="btn-warning col-s-3" *ngFor="let item of buttonOperators" (click)="addOperation(item)">{{item}}</button>
+@for (item of buttonOperators; track $index) {
+  <button class="btn-warning col-s-3"  (click)="addOperation(item)">{{item}}</button>
+}
 </div>
