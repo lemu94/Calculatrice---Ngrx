@@ -18,6 +18,7 @@ export class ButtonsComponent implements OnInit {
   buttons$ : Observable<ButtonsC>;
   buttonvalues : number[]= ButtonValue;
   buttonOperators : string[]= ButtonOperators;
+  valeursave : number=0;
   constructor(private storeButtons : Store<{Buttonsc : ButtonsC}>)
   {
 
@@ -31,7 +32,19 @@ export class ButtonsComponent implements OnInit {
   }
   addOperation (operator : string) : void
   {
-    this.storeButtons.dispatch(ButtonsActions.operation({operator}));
+    
+    
+
+    this.buttons$.subscribe((portal: ButtonsC) => {
+      if (portal) {
+       this.valeursave=   parseInt(portal.nombre.toString())
+      }
+
+    })  
+
+    this.storeButtons.dispatch(ButtonsActions.operation({ 'operator' : operator,'nombre': this.valeursave}));
+
+
 
   }
   ajout_nombre(nombre : number) : void

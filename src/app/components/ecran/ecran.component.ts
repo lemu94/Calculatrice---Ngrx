@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , signal } from '@angular/core';
 import { ButtonsC } from '../../store/buttons/buttons.model';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
